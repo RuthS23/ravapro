@@ -1,0 +1,133 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>RAVAPRO</title>
+    <link rel="stylesheet" href="styles.css">
+    <link rel="icon" href="IMG-20231019-WA0026.ico" type="image/x-icon">
+    <style>
+        body {
+            font-family: Arial, sans-serif;
+            margin: 0;
+            padding: 0;
+            background-color: #f4f4f4;
+        }
+        header {
+            background-color: #fff8e7;
+            color: #0f0e0e;
+            padding: 20px 0;
+            text-align: center;
+        }
+        nav {
+            display: flex;
+            justify-content: center;
+            background-color: #444;
+        }
+        nav a {
+            color: #fff;
+            padding: 14px 20px;
+            text-decoration: none;
+            text-align: center;
+        }
+        nav a:hover {
+            background-color: #555;
+        }
+        .container {
+            padding: 20px;
+        }
+        .products {
+            display: flex;
+            flex-wrap: wrap;
+            justify-content: space-around;
+        }
+        .product {
+            background-color: #fff;
+            border: 1px solid #ddd;
+            border-radius: 10px;
+            margin: 10px;
+            padding: 20px;
+            width: calc(33% - 40px);
+            box-shadow: 0 2px 5px rgba(0,0,0,0.1);
+            text-align: center;
+        }
+        .product img {
+            max-width: 100%;
+            height: auto;
+            border-radius: 10px;
+        }
+        .product h3 {
+            margin: 10px 0;
+        }
+        .product p {
+            color: #777;
+        }
+        .product .price {
+            font-size: 1.2em;
+            color: #000;
+            margin: 10px 0;
+        }
+        .product button {
+            background-color: #333;
+            color: #fff;
+            border: none;
+            padding: 10px 20px;
+            border-radius: 5px;
+            cursor: pointer;
+            font-size: 1em;
+        }
+        .product button:hover {
+            background-color: #555;
+        }
+        footer {
+            background-color: #333;
+            color: #fff;
+            text-align: center;
+            padding: 20px 0;
+            position: relative;
+            bottom: 0;
+            width: 100%;
+        }
+    </style>
+</head>
+<body>
+
+    <header>
+        <h1>Devoluciones</h1>
+        <p>Calidad que puedes sentir, estilo que puedes ver</p>
+    </header>
+     
+    <nav>
+        <a href="INICIO.html">Inicio</a>
+        <a href="PRODUCTOS.html">Productos</a>
+        <a href="CONTACTO.html">Contacto</a>
+        <a href="CARRITO.html">Carrito</a>
+    </nav>
+
+    <h1>Contacto del Cliente</h1>
+    <form action="/procesar_devpedido" method="post">
+        <label for="id">ID del Cliente:</label>
+        <input type="text" name="Numero" size="5" required><br><br>
+
+        <label for="nombre">Nombre:</label>
+        <input type="text" id="nombre" name="nombre" required><br><br>
+
+        <label for="email">Correo Electronico:</label>
+        <input type="email" id="email" name="email" required><br><br>
+
+        <label for="direccion">Direccion:</label>
+        <input type="text" id="direccion" name="direccion" required><br><br>
+
+        <label for="direccion">Numero de Contacto:</label>
+        <input type="text" name="Numero" size="10" maxlength="15"><br><br>
+
+        <label for="producto">Producto:</label>
+    
+        <label for="cantidad">Cantidad:</label>
+        <input type="number" id="cantidad" name="cantidad" min="1" required><br><br>
+
+        <textarea name="Motivo de Devolucion"></textarea><br><br>
+        <input type="submit" value="Enviar">
+    </form>
+</body>
+</html>

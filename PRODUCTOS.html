@@ -1,0 +1,163 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>RAVAPRO</title>
+    <link rel="stylesheet" href="styles.css">
+    <link rel="icon" href="IMG-20231019-WA0026.ico" type="image/x-icon">
+    <style>
+        body {
+            font-family: Arial, sans-serif;
+            margin: 0;
+            padding: 0;
+            background-color: #f4f4f4;
+        }
+        header {
+            background-color: #fff8e7;
+            color: #0f0e0e;
+            padding: 20px 0;
+            text-align: center;
+        }
+        nav {
+            display: flex;
+            justify-content: center;
+            background-color: #444;
+        }
+        nav a {
+            color: #fff;
+            padding: 14px 20px;
+            text-decoration: none;
+            text-align: center;
+        }
+        nav a:hover {
+            background-color: #555;
+        }
+        .container {
+            padding: 20px;
+        }
+        .products {
+            display: flex;
+            flex-wrap: wrap;
+            justify-content: space-around;
+        }
+        .product {
+            background-color: #fff;
+            border: 1px solid #ddd;
+            border-radius: 10px;
+            margin: 10px;
+            padding: 20px;
+            width: calc(33% - 40px);
+            box-shadow: 0 2px 5px rgba(0,0,0,0.1);
+            text-align: center;
+        }
+        .product img {
+            max-width: 100%;
+            height: auto;
+            border-radius: 10px;
+        }
+        .product h3 {
+            margin: 10px 0;
+        }
+        .product p {
+            color: #777;
+        }
+        .product .price {
+            font-size: 1.2em;
+            color: #000;
+            margin: 10px 0;
+        }
+        .product button {
+            background-color: #333;
+            color: #fff;
+            border: none;
+            padding: 10px 20px;
+            border-radius: 5px;
+            cursor: pointer;
+            font-size: 1em;
+        }
+        .product button:hover {
+            background-color: #555;
+        }
+        footer {
+            background-color: #333;
+            color: #fff;
+            text-align: center;
+            padding: 20px 0;
+            position: relative;
+            bottom: 0;
+            width: 100%;
+        }
+    </style>
+</head>
+<body>
+
+    <header>
+        <h1>Productos</h1>
+        <p>Calidad que puedes sentir, estilo que puedes ver</p>
+     
+    </header>
+
+    <nav>
+        <a href="INICIO.html">Inicio</a>
+        <a href="PRODUCTOS.html">Productos</a>
+        <a href="formularios.html">Formularios</a>      
+    </nav>
+
+    <div class="container">
+        <section id="productos" class="productos">
+            <div class="product">
+                <img src="garfield.jpg" alt="garfield">
+                <h3>Pijama de estampado de Garfield</h3>
+                <p>Prenda de tela ligera, muy suave.</p>
+                <div class="price">$220</div>
+                <a target="carrito" class= "btn-primary" href="Login.html">Realizar Compra</a>
+            </div>
+            <div class="product">
+                <img src="snoopy.jpg" alt="snoopy">
+                <h3>Pijama de estampado de Snoopy</h3>
+                <p>Prenda de tela ligera, muy suave.</p>
+                <div class="price">$220</div>
+                <a target="carrito" class= "btn-primary" href="Login.html">Realizar Compra</a>
+            </div>
+            <div class="product">
+                <img src="azul.jpg" alt="azul">
+                <h3>Playera de Hombre</h3>
+                <p>Excelente tela con excelente estampado</p>
+                <div class="price">$120</div>
+                <a target="carrito" class= "btn-primary" href="Login.html">Realizar Compra</a>
+            </div>
+            <div class="product">
+                <img src="adidas.jpg" alt="adidas">
+                <h3>Playera de Mujer </h3>
+                <p>Excelente calidad en la tela, stresh </p>
+                <div class="price">$70</div>
+                <a target="carrito" class= "btn-primary" href="Login.html">Realizar Compra</a>
+            </div>
+            <div class="product">
+                <img src="top.jpg" alt="top">
+                <h3>Top de Mujer en Color Blanco y Negro</h3>
+                <p>Buena calidad de tela, stresh</p>
+                <div class="price">$70</div>
+                <a target="carrito" class= "btn-primary" href="Login.html">Realizar Compra</a>
+                
+            </div>
+            <div class="product">
+                <img src="psicoobunny.jpg" alt="psicoobunny">
+                <h3>Playera de Hombre</h3>
+                <p>Buena calidad de la prenda</p>
+                <div class="price">$120</div>
+                <a target="carrito" class= "btn-primary" href="Login.html">Realizar Compra</a>
+            </div>
+        </section>
+    </div>
+    <a href="INICIO.html">
+        <span></span>
+        <span></span>
+        <span></span>
+        <span></span>
+        Regresar
+      </a>
+
+</body>
+</html>
